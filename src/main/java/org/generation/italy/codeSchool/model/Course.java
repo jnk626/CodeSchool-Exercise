@@ -6,6 +6,7 @@ public class Course {
     private String description;
     private String program;
     private double duration;
+    public Course(){};
 
     public Course(long id, String title, String description, String program, double duration) {
         this.id = id;
@@ -17,6 +18,10 @@ public class Course {
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id){
+        this.id = id;
     }
 
     public String getTitle() {
